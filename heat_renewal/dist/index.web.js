@@ -22517,7 +22517,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("The environment is ready!")]), _vm._v(" "), _c('a', {
     staticClass: "greeting weex-ct weex-a",
     attrs: {
-      "href": "../dist/index.shop.js",
+      "href": "../dist/index.shop.web.js",
       "weex-type": "a"
     },
     on: {

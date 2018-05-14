@@ -2740,7 +2740,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('a', {
     staticClass: ["greeting"],
     attrs: {
-      "href": "../dist/index.shop.js"
+      "href": "../dist/index.shop.web.js"
     }
   }, [_c('text', [_vm._v(" 热更新app 到商城代码 ")])])
 }]}

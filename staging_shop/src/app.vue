@@ -1,8 +1,11 @@
 <template>
-  <div class="wrapper">
-    <nav-bar @tabTo="onTabTo"></nav-bar>
-    <router-view/>
-  </div>
+    <div class="wrapper">
+      <!-- 滚动条设置 -->
+      <!-- scroller -->
+        <nav-bar @tabTo="onTabTo"></nav-bar>
+        <router-view/>
+    </div>
+  
 </template>
 
 <script>
@@ -30,5 +33,5 @@ export default {
 </script>
 
 <style scoped>
-
+  
 </style>

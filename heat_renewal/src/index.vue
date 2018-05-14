@@ -2,7 +2,7 @@
   <div class="wrapper">
     <image :src="logo" class="logo" />
     <text class="greeting">The environment is ready!</text>
-    <a href="../dist/index.shop.js" class="greeting" >
+    <a href="../dist/index.shop.web.js" class="greeting" >
       <text> 热更新app 到商城代码 </text>
     </a>
     <router-view/>
@@ -29,6 +29,7 @@ export default {
     width: 424px;
     height: 200px;
   }
+  
   .greeting {
     text-align: center;
     margin-top: 70px;

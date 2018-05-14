@@ -1,8 +1,6 @@
 <template>
   <div class="wrapper">
-    <!-- 滚动条设置 -->
-    <!-- scroller -->
-    <scroller>
+   
       <!-- 额度展示 -->
       <div class="banner">
         <text class="comment">融卡分期额度(元)</text>
@@ -124,35 +122,26 @@
               </cell>
           </list>
       </div>
-    </scroller> 
   </div>
 </template>
 
 <script>
     var navigator = weex.requireModule('navigator');
     var modal = weex.requireModule('modal');
+    var stream = weex.requireModule('stream');
     export default {
         methods: {
             jump (event) {
               this.$router && this.$router.push(event);
               modal.toast({ message: 'callback: 跳转回调成功'+event});
 
-              /*
-                    console.log('will jump')
-                navigator.push({
-                    url: 'http://dotwe.org/raw/dist/519962541fcf6acd911986357ad9c2ed.js',
-                    animated: "true"
-                }, event => {
-                    modal.toast({ message: 'callback: 跳转回调成功'})
-                })
-                */
             }
         },
         data () {
             return {
                 logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png',
             }
-        } 
+        }
     }
 </script>
 
@@ -164,7 +153,6 @@
     align-items: center;
     */
   }
-
   .header{
     background-color: #fff;
     flex-direction: row;
@@ -191,7 +179,6 @@
     color: #ff0000;
     
   }
-  
   /* 额度分期提示 */
   .banner{
     height: 260px;
@@ -199,10 +186,9 @@
     flex-direction: column;
     align-items: center;
   }
-  
   .comment {
     lines:1;
-    font-size: 28px; 
+    font-size: 28px;
     height: 38px;
     color: #fff;
     text-align: center;
@@ -216,7 +202,6 @@
     height: 100px;
     padding-top: 6px;
   }
-  
   /* 充值中心入口、数码3C */
   .recharge_tip {
         height: 160px; 
@@ -228,7 +213,6 @@
         padding-bottom: 40px;
         justify-content: space-between;
         align-items: center;
-        
     }
   .sale_area {
         flex-direction: row;
@@ -237,7 +221,6 @@
         align-items:center;
         padding-left:40px;
   }
-
   .sale_img_url{
       width: 80px;
       height: 80px; 
@@ -259,8 +242,6 @@
         color: #999;
         margin-top: 10px;
     }
-
-
   /* 产品列表 */
   .goods_list_area {
       margin-top: 20px;
